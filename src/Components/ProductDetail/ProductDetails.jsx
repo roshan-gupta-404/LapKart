@@ -1,5 +1,6 @@
 import React from 'react'
 import Container from '../Container'
+import QuantityButton from '../QuantityButton/QuantityButton'
 
 function ProductDetails() {
     return (
@@ -21,9 +22,7 @@ function ProductDetails() {
                         ₹12,299 /-
                         </div>
 
-                        <div id='quantity' className='px-8 my-8'>
-                        <button className='border w-10 text-xl text-white bg-orange-400'>-</button>{" 1 "}<button className='border w-10 text-xl text-white bg-green-500'>+</button>
-                        </div>
+                        <QuantityButton/>
 
                         <div className='my-4 px-8 flex justify-between gap-x-2'>
                             <button className='w-52 bg-yellow-400 p-2 text-xl rounded-md'>Add To Cart</button>
